@@ -1,0 +1,293 @@
+@import 'style.css';
+
+
+.cover{
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    
+    left: 0;
+    background-color: #fcbf49;
+}
+
+.cover img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cover svg.edit-cover{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+
+.profile-container .info-container{
+    margin-top: 30px;
+}
+
+.profile-container .contents-container{
+    margin-top: 150px;
+}
+
+.info-container .info{
+    border-radius: 12px;
+    padding: 5px 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+.info-container .edit-info{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+}
+
+.info .avatar{
+    height: 114px;
+    width: 114px;
+    padding: 20px;
+    background: url(../img/avatar-bg.png);
+}
+
+.info .avatar img{
+    height: 70px;
+}
+
+.info .profile-name{
+    font-family: 'OpenSans-700';
+    font-size: 34px;
+}
+
+.info .profile-bio{
+    font-size: 14px;
+}
+
+.info .profile-tag{
+    margin-top: 5px;
+    font-family: 'OpenSans-300';
+    font-size: 20px;
+}
+
+.info .profile-option{
+    padding: 20px 0;
+    margin: 20px 0;
+    border-top: 1px solid #BBBFCA;
+    border-bottom: 1px solid #BBBFCA;
+}
+
+.info .options{
+    font-size: 14px;
+    padding: 15px;
+    border: 1px dashed #BBBFCA;
+}
+
+.info .profile-others{
+    border: 0;
+}
+
+.info .options span{
+    width: 55px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 42px;
+    font-family: 'OpenSans-300';
+    user-select: none;
+    background-color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.info .options span.off{
+    background-color: var(--third-color);
+}
+
+.info .options span::after{
+    height: 18px;
+    width: 18px;
+    content: "";
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+ 
+.info .options span.off{
+    text-align: right;
+    color: #333;
+}
+
+.info .options span.off::after{
+    right: auto;
+    left: 3px;
+    background-color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.info .options p{
+    font-family: 'OpenSans-400-italic';
+    padding: 10px 10px 0 10px;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.info .analytics{
+    font-size: 14px;
+}
+
+.info .social p{
+    font-size: 14px;
+}
+
+.info .social ul{
+    padding: 0;
+}
+
+.info .social ul li{
+    list-style: none;
+    margin: 0 8px;
+}
+
+.info .social ul li svg *{
+    transition: all 0.3s;
+}
+
+.info .social ul li svg:hover *{
+    fill: var(--secondary-color);
+    transition: all 0.3s;
+}
+
+
+
+.contents-data{
+    display: none;
+}
+
+.contents-data.active{
+    display: block;
+}
+
+.tabs{
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.tabs li{
+    font-size: 20px;
+    font-family: 'OpenSans-300';
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    color: #bbbfca;
+    cursor: pointer;
+}
+
+.tabs li.active{
+    color: #000;
+    text-decoration: underline;
+}
+
+.content-post{
+    position: relative;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: var(--third-color);
+}
+
+.content-post .post-img{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.content-post .post-title{
+    font-size: 20px;
+    font-family: 'OpenSans-700';
+}
+
+.content-post .post-desc{
+    font-size: 14px;
+}
+
+.content-post .post-likes{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'OpenSans-300';
+    transition: all 0.5s;
+}
+
+.content-post .post-likes svg{
+    height: 15px;
+    width: 15px;
+    margin: 2px 0 0 3px;
+    transition: all 0.5s;
+}
+
+.content-post .post-likes:hover svg{
+    transform: scale(1.2);
+}
+
+
+.collaborations-container .post-title{
+    font-size: 20px;
+    font-family: 'OpenSans-300';
+}
+
+.collaborations-container .post-desc{
+    font-size: 14px;
+}
+
+.collaborations-container .post-edit{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.favorites-container{
+    height: 250px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favorites-container img,
+.favorites-container div{
+    height: 50%;
+    width: calc(50% - 4px);
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.favorites-container div img{
+    height: 47%;
+}
+
+.favorites-container svg{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* @media(max-width: 992px){
+    .navbar .nav-large-devices,
+    .navbar p{
+        display: none;
+    }
+
+    .navbar .nav-small-devices{
+        display: block;
+    }
+
+} */

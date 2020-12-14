@@ -1,0 +1,106 @@
+@import 'style.css';
+
+.search-title-container{
+    border-bottom: 1px solid #BBBFCA;
+}
+
+.search-title{
+    font-size: 32px;
+    color: var(--secondary-color);
+    font-family: 'OpenSans-700';
+}
+
+.filter-category {
+    cursor: default;
+}
+
+.filter-category div{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--third-color);
+    transition: all 0.3s;
+}
+
+.filter-category div:hover,
+.filter-category div.active{
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.form-container{
+    width: 60%;
+    padding: 0 50px;
+    margin: auto;
+    background-color: var(--third-color);
+}
+
+.form-container .form-group{
+    margin: 30px 0;
+}
+
+.form-container .form-group input,
+.form-container .form-group textarea{
+    color: #000;
+    padding: 5px 15px;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    border: 0;
+    border-radius: 0;
+    background-color: #C4C4C4;
+}
+
+.form-container .form-group input::placeholder,
+.form-container .form-group textarea::placeholder{
+    color: #000;
+}
+
+.form-container .form-group textarea{
+    height: 80px;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group textarea:focus{
+    border-color: var(--secondary-color);
+}
+
+.form-container .tags-container{
+    display: none;
+}
+
+.form-container .upload-file{
+    height: 250px;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    background-color: #C4C4C4;
+}
+
+.form-container .upload-file input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form-container .btn{
+    width: auto;
+    color: #000;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 2px 25px;
+    border: 2px solid #000;
+    background-color: #C4C4C4;
+}
+
+
+

@@ -1,0 +1,151 @@
+@import 'style.css';
+
+.navbar .light{
+    color: var(--secondary-color);
+}
+
+.navbar .light:hover{
+    color: var(--primary-color);
+}
+
+.featured-title{
+    color: #7B818A;
+    font-size: 14px;
+}
+
+.featured-project .post-img img{
+    width: 100%;
+    height: 300px;
+}
+            
+.featured-project .post-details h2{
+    font-size: 20px;
+    font-family: 'OpenSans-700';
+}
+
+.featured-project .post-details p{
+    font-size: 14px;
+}
+
+.featured-post-details{
+    padding-left: 15px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.featured-project a{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.featured-project a:hover{
+    color: var(--secondary-color);
+}
+
+.featured-project a:hover img{
+    transform: scale(1.4);
+}
+
+.featured-project .post-img{
+    overflow: hidden;
+}
+
+.featured-project .post-img img{
+    transition: all 1s;
+}
+
+
+.post-container h1{
+    font-size: 20px;
+    font-family: 'OpenSans-700';
+    color: var(--secondary-color);
+}
+
+
+.post-container .post-details p{
+    font-size: 18px;
+    font-family: 'OpenSans-300';
+}
+
+.author-details{
+    margin-top: 100px;
+}
+
+.post-tags{
+    color: #7f828b;
+    font-size: 14px;
+    font-family: 'OpenSans-300';
+}
+
+.author{
+    font-size: 18px;
+    font-family: 'OpenSans-300';
+}
+
+.author img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.featured-project.post-container a:hover img{
+    transform: none;
+}
+
+.featured-project .post-img.timeline-photo img{
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.scaling{
+    overflow: hidden;
+}
+
+.featured-project .post-img.timeline-photo img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.overlay-container{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #E5E5E5;
+}
+
+
+.overlay-container img{
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.overlay-container svg.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+.audio-container svg{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.audio-container svg:hover{
+    transform: scale(1.1);
+}
+
+
+
+.play-btn{
+    height: 80px;
+    cursor: pointer;
+}

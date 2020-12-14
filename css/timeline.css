@@ -1,0 +1,116 @@
+@import 'style.css';
+
+.timline-title{
+    font-size: 20px;
+    font-family: 'OpenSans-700';
+}
+
+.trending-container div{
+    height: 175px;
+    width: 175px;
+    overflow: hidden;
+    background-color: var(--third-color);
+}
+                
+.trending-container div img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.trending-container div img:hover{
+    transform: scale(1.1);
+}
+
+.trending-container a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3a3434cc;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'OpenSans-700';
+    transition: all 0.3s;
+}
+
+.trending-container a:hover{
+    color: var(--secondary-color);
+}
+
+.timeline-posts{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.timeline-post{
+    padding: 15px 40px;
+    margin-bottom: 30px;
+    background-color: #c4c4c447;
+}
+
+.timeline-post a{
+    font-size: 18px;
+    color: var(--primary-color);
+    font-family: 'OpenSans-300';
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.timeline-post a:hover{
+    color: var(--secondary-color);
+}
+
+.timeline-post a img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+.timeline-date{
+    font-size: 14px;
+}
+
+.timeline-photo a img{
+    height: 145px;
+    width: 145px;
+    margin-right: 30px;
+    border-radius: 0;
+}
+
+.timeline-post-details h2 {
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+
+.timeline-post-details h2 a{
+    font-size: 20px;
+    font-family: 'OpenSans-700';
+}
+
+.timeline-post-details p{
+    font-size: 14px;
+}
+
+.timeline-post-details div{
+    margin-top: 50px;
+}
+
+.timeline-post-details div span{
+    margin: 0 10px;
+    border-radius: 25px;
+    border: 1px solid #BBBFCA;
+    background-color: var(--third-color);
+}
+
+.timeline-post-details div span a{
+    color: #bbbfca;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+
+
+

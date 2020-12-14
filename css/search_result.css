@@ -1,0 +1,109 @@
+@import 'style.css';
+
+.search-title-container{
+    border-bottom: 1px solid #BBBFCA;
+}
+
+.search-title{
+    font-size: 32px;
+    color: var(--secondary-color);
+    font-family: 'OpenSans-700';
+}
+
+.filter-category {
+    cursor: default;
+}
+
+.filter-category div{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--third-color);
+    transition: all 0.3s;
+}
+
+.filter-category div:hover,
+.filter-category div.active{
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.timeline-posts{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.timeline-post{
+    padding: 15px 40px;
+    margin-bottom: 30px;
+    background-color: #c4c4c447;
+}
+
+.timeline-post a{
+    font-size: 18px;
+    color: var(--primary-color);
+    font-family: 'OpenSans-300';
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.timeline-post a:hover{
+    color: var(--secondary-color);
+}
+
+.timeline-post a img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+.timeline-date{
+    font-size: 14px;
+}
+
+.timeline-photo a img{
+    height: 145px;
+    width: 145px;
+    margin-right: 30px;
+    border-radius: 0;
+}
+
+.timeline-post-details h2 {
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+
+.timeline-post-details h2 a{
+    font-size: 20px;
+    font-family: 'OpenSans-700';
+}
+
+.timeline-post-details p{
+    font-size: 14px;
+}
+
+.timeline-post-details div{
+    margin-top: 50px;
+}
+
+.timeline-post-details div span{
+    margin: 0 10px;
+    border-radius: 25px;
+    border: 1px solid #BBBFCA;
+    background-color: var(--third-color);
+}
+
+.timeline-post-details div span a{
+    color: #bbbfca;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.timeline-post.all{
+    display: block;
+}
