@@ -135,7 +135,8 @@ svg.edit:hover{
 }
 
 .btn-primary:hover,
-.btn-primary:not(:disabled):not(.disabled):active{
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary.followed{
     color: #fff;
     border-color: #fff;
     background-color: var(--secondary-color);
@@ -318,8 +319,8 @@ svg.edit:hover{
     text-align: center;
 }
 
-.play-btn,
+/* .play-btn,
 #waveform{
     opacity: 0;
     transition: all 0.5s;
-}
+} */

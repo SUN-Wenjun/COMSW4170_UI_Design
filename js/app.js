@@ -57,7 +57,8 @@ $(document).ready(function(){
         $(".filename").text(filename);
     });
 
-    if($(".audio-container").length){
+
+    /* if($(".audio-container").length){
         var wavesurfer = WaveSurfer.create({
             container: '#waveform',
             progressColor: '#000',
@@ -77,8 +78,17 @@ $(document).ready(function(){
             $(this).toggleClass("play");
             $(this).hasClass("play") ? wavesurfer.play() : wavesurfer.pause();
         });
-    }
+    } */
 
+    $(".play-btn").on("click", function(){
+        $(this).toggleClass("play");
+        $(this).hasClass("play") ? $("#audio").trigger("play") : $("#audio").trigger("pause");
+    });
+
+
+    $(".follow-btn").click(function(){
+        $(this).toggleClass("followed");
+    });
 });
 
 
