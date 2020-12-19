@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Campus Creatives - Cover Page</title>
+    </head>
+<head>
+    <meta charset="utf-8" />  
+    <title>Campus Creative - Cover Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/coverpage.css" media="screen">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>  
+<body>
+    <div class="title">
+        <h2>Campus Creative</h2>
+        <span class="annotation">
+            A campus-wide multi-media social networking platform that help natural groups of users to create and share their artworks
+        </span>
+    </div>
+    
+
+    <div class="carousel"
+       data-flickity='{ "lazyLoad": true }'>
+      <div class="carousel-cell">
+        <img class="carousel-cell-image"
+          data-flickity-lazyload="img/lion1.jpg" alt="profile" />
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-cell-image"
+          data-flickity-lazyload="img/music1.jpg" alt="grapes" />
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-cell-image"
+          data-flickity-lazyload="img/cityphoto.jpg" alt="raspberries" />
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-cell-image"
+          data-flickity-lazyload="img/cartoonlandscape.jpeg" alt="wolf" />
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-cell-image"
+          data-flickity-lazyload="img/paintinglandscape.jpg" alt="sea" />
+      </div>
+    </div>
+    
+    <div class="getstart">
+        <button id="signup" class="btn btn-primary" onclick="openSignup()">Sign up</button>
+        <button id="login" class="btn btn-primary" onclick="openLogin()">Login</button>
+    </div>
+    <div>
+        <div id="signup-popup" class="signupform">
+            <div class="signup">
+                <h2>Sign up</h2>
+                <form>
+                    <input type="text" placeholder="User Name" />
+                    <input type="email" placeholder="University Email Address" />
+                    <input type="password" placeholder="Enter Password" />
+                    <input type="password" placeholder="Repeat Password" />
+                    <button class="btn btn-primary"><a href="timeline.html">Sign up</a></button>
+                    <button class="btn btn-primary" onclick="closeSignup()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="login-popup" class="loginform">
+            <div class="login">
+                <h2>Log in</h2>
+                <form>
+                    <input type="email" placeholder="Enter Email Address" />
+                    <input type="password" placeholder="Enter Password" />
+                    <button class="btn btn-primary"><a href="timeline.html">Login</a></button>
+                    <button class="btn btn-primary" onclick="closeLogin()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function openSignup() {
+            document.getElementById("signup-popup").style.display = "block";
+        }
+
+        function closeSignup() {
+            document.getElementById("signup-popup").style.display = "none";
+        }
+
+        function openLogin() {
+            document.getElementById("login-popup").style.display = "block";
+        }
+
+        function closeLogin() {
+            document.getElementById("login-popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
