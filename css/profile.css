@@ -48,7 +48,6 @@
     height: 114px;
     width: 114px;
     padding: 20px;
-    background: url(../img/avatar-bg.png);
 }
 
 .info .avatar img{
@@ -279,7 +278,7 @@
     right: 10px;
 }
 
- 
+
 /* @media(max-width: 992px){
     .navbar .nav-large-devices,
     .navbar p{
