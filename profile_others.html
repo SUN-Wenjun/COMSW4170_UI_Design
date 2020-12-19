@@ -72,7 +72,7 @@
                             <div class="options profile-others">
                                 <div class="d-flex justify-content-around align-items-center mb-3">
                                     <button class="btn btn-primary follow-btn">Follow</button>
-                                    <button class="btn btn-primary">Message</button>
+                                    <button class="btn btn-primary" onclick="openChat()">Message</button>
                                 </div>
 
                                 <p>Always up for collaborating on projects about mystery and adventure.</p>
@@ -302,6 +302,18 @@
 
                 </div>
             </div>
+            <div class="chat-popup" id="chatWindow">
+                <div class="chatform">
+                    <h2>Contact Alice</h2>
+                    <form>
+                        <input type="text" placeholder="Your Name" />
+                        <input type="email" placeholder="Email Address" />
+                        <textarea name="message" placeholder="The Message will direct to Alice MailBox"></textarea>
+                        <button class="btn btn-primary" onclick="closeChat()">Send</button>
+                        <button class="btn btn-primary" onclick="closeChat()">Close</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
 
@@ -312,5 +324,14 @@
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/app.js"></script>
+        <script type="text/javascript">
+            function openChat() {
+                document.getElementById("chatWindow").style.display = "block";
+            }
+
+            function closeChat() {
+                document.getElementById("chatWindow").style.display = "none";
+            }
+        </script>
     </body>
 </html>
